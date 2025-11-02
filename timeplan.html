@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
+
     <header>
         <div class="nav">
             <ul>
-            <li><a href="#">hjem<i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#">interesser<i class="fa-solid fa-dumbbell"></i></a></li>
-            <li><a href="#">skole<i class="fa-solid fa-graduation-cap"></i></a></li>
-            <li><a href="#">bildegalleri<i class="fa-solid fa-images"></i></a></li>
+                <li><a href="index.html">hjem<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="interesser.html">interesser<i class="fa-solid fa-dumbbell"></i></a></li>
+                <li><a href="timeplan.html">skole<i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="bildeballeri.html">bildegalleri<i class="fa-solid fa-images"></i></a></li>
             </ul>
         </div>
     </header>
+
+    <h1 class="timeplan-h1">timeplan</h1>
 
     <div class="container">
         <table>
@@ -34,7 +41,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
+
+                    <td class="tid"></td>
                     <td>partall</td>
                     <td>oddetall</td>
                     <td>partall</td>
@@ -45,60 +53,86 @@
                     <td>oddetall</td>
                     <td>partall</td>
                     <td>oddetall</td>
-                    
-                  
+
+
                 </tr>
                 <tr>
-                    <td>08:15--09:50</td>
+                    <td class="tid">08:15--09:50</td>
                     <td class="IT">IT</td>
-                    <td></td>
-                    <td class="tysk">Tysk</td>
-                    <td class="matte">Mattematikk</td>
-                    <td class="kjemi">Kjemi</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="mattematikk">Mattematikk</td>
+                    <td colspan="2"></td>
+                    <td colspan="2" class="tysk">Tysk</td>
+                    <td colspan="2" class="mattematikk">Mattematikk</td>
+                    <td colspan="2" class="kjemi">Kjemi</td>
+
                 </tr>
-        
+
                 <tr>
-                    <td>10:00--11:35</td>
+                    <td class="tid">10:00--11:35</td>
                     <td colspan=2 class="kjemi">Kjemi</td>
-                    <td class="fysikk">Fysikk</td>
+                    <td colspan="2" class="fysikk">Fysikk</td>
                     <td class="historie">Historie</td>
                     <td class="norsk">Norsk</td>
-                    <td class="IT">IT</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="2" class="norsk">Norsk</td>
+                    <td colspan="2" class="IT">IT</td>
+
                 </tr>
 
                 <tr>
-                    <td>11.35--12:20</td>
-                    <td colspan="10">lunsj</td>
-                    
+                    <td class="tid">11.35--12:20</td>
+                    <td class="lunsj" colspan="10">lunsj</td>
+
                 </tr>
 
                 <tr>
-                    <td>12:20--13:55</td>             
-                    <td class="gym">Kroppsøving</td>
+                    <td class="tid">12:20--13:55</td>
+                    <td colspan="2" class="gym">Kroppsøving</td>
                     <td class="norsk">Norsk</td>
-                    <td class="IT">IT</td>
-                    <td class="fysikk">Fysikk</td>
-                    <td class="tysk">Tysk</td>
+                    <td class="historie">Historie</td>
+                    <td colspan="2" class="IT">IT</td>
+                    <td colspan="2" class="fysikk">Fysikk</td>
+                    <td colspan="2" class="tysk">Tysk</td>
 
 
                 </tr>
-                
+
+                <tr>
+                    <td class="tid">14:05--15:40</td>
+                    <td class="fysikk">Fysikk</td>
+                    <td></td>
+                    <td colspan="2" class="mattematikk">Mattematikk</td>
+                    <td colspan="2"></td>
+                    <td class="kjemi">Kjemi</td>
+
+
+                </tr>
+
             </tbody>
 
         </table>
     </div>
+   
+    </div>
+    <h3>Dette er mine program valgfag</h3>
+    <div class="wrapper">
+        <div class="box">
+            <p> IT er et av mine 3 program valgfag som jeg har valgt for vg2. Jeg valgte IT fordi jeg er mye på pc-en hjemme, så jeg syntes det kunne vært kult å lære mer om hvordan ting faktisk fungerer</p>
+        </div>
+        <div class="box"><p>Fysikk er mitt andre program valgfag. Jeg valgte fysikk for 2 grunner. første er at man trenger fysikk til mange studier. Andre er at i fysikk lærer man om hvordan verden fungerer, noe jeg syntes er interessant.</p>
+        </div>
+        <div class="box"><p>kjemi er mitt tredje og siste program valgfag. KJemi valgte jeg også fordi det hjelper for mange studier. Kjemi er veldig interessant og jeg syntes det er gøy å lære om. </p>
+        </div>
+ 
+    </div>
 
-    
+    <footer>
+        <p>© 2025 - Laget av Joakim Kallevåg Eriksen</p>
 
-    
+    </footer>
+
+
+
+
 </body>
+
 </html>
